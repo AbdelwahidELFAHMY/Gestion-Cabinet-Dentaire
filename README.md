@@ -27,12 +27,12 @@ Ajouter ou Modifier Ordonance ou Consultation.
 <h5>Connexion sécurisée avec différents niveaux d'accès :</h5>
 
 <strong>Secrétaire :</strong> Identifiant root, Mot de passe root
-<strong>Dentiste :</strong>strong> Identifiant admin, Mot de passe admin (pour tester)
+<strong>Dentiste :</strong> Identifiant admin, Mot de passe admin (pour tester)
 
 <h5>Technologies Utilisées:</h5>
-<strong>JavaFX : </strong>strong>Utilisé pour la création de l'interface utilisateur et la gestion des événements.
-<strong>Scene Builder :</strong>strong> Outil de conception visuelle pour construire les interfaces utilisateur JavaFX.
-<strong>CSS : </strong>strong>Utilisé pour styliser l'interface utilisateur et améliorer l'expérience utilisateur.
+<strong>JavaFX : </strong>Utilisé pour la création de l'interface utilisateur et la gestion des événements.
+<strong>Scene Builder :</strong> Outil de conception visuelle pour construire les interfaces utilisateur JavaFX.
+<strong>CSS : </strong>Utilisé pour styliser l'interface utilisateur et améliorer l'expérience utilisateur.
 
 <h5Prérequis:</h5>
 Pour exécuter cette application localement, assurez-vous d'avoir installé les outils suivants :
