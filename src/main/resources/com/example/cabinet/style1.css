@@ -1,0 +1,124 @@
+/* Base styling */
+* {
+    box-sizing: border-box;
+}
+/*//* C9CDD1FF*/
+
+.AnchorPane{
+    -fx-background-image: url('image/cabinet-1.jpg'); /* Chemin vers l'image */
+    -fx-background-size: cover; /* Pour ajuster l'image à la taille du StackPane */
+    -fx-background-position: center; /* Centrer l'image */
+    -fx-background-repeat: no-repeat;
+}
+
+.UserIcon{
+    -fx-background-image: url('image/DoctorUser.png'); /* Chemin vers l'image */
+    -fx-background-size: cover; /* Pour ajuster l'image à la taille du StackPane */
+    -fx-background-position: center; /* Centrer l'image */
+    -fx-background-repeat: no-repeat;
+}
+
+/* Styling for labels */
+.label {
+    -fx-font-family: 'Arial';
+    -fx-font-size: 20px;
+    -fx-text-fill: #0c06a8;
+    -fx-font-weight: bold;
+
+}
+
+/* Styling for checkboxes */
+.check-box {
+    -fx-font-family: 'Arial';
+    -fx-font-size: 14px;
+    -fx-text-fill: #0c06a8;
+
+}
+
+/* Styling for text fields */
+.text-field {
+    -fx-background-color: #f7f7f7;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+    -fx-font-family: 'Arial';
+    -fx-font-size: 14px;
+}
+
+/* Styling for password fields */
+.password-field {
+    -fx-background-color: #f7f7f7;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+    -fx-font-family: 'Arial';
+    -fx-font-size: 14px;
+}
+
+/* Styling for buttons */
+.button {
+    -fx-background-color: linear-gradient(to bottom, #0c2bca, #8abffd);
+    -fx-text-fill: white; /* Couleur du texte */
+    -fx-font-size: 14px; /* Taille de la police */
+    -fx-padding: 8px 16px; /* Rembourrage du bouton */
+    -fx-background-radius: 5px; /* Bordure arrondie */
+}
+
+.button:hover {
+linear-gradient(to bottom, #0c2bca, #8abffd);
+    border-color: #0027fb;
+}
+
+/* Base styling for ComboBox */
+.combo-box {
+    -fx-background-color: #f7f7f7; /* Same as text fields */
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+    -fx-font-family: 'Arial';
+    -fx-font-size: 14px;
+    -fx-text-fill: #0c06a8; /* Same color as labels */
+}
+
+/* Styling for the ComboBox dropdown list */
+.combo-box-popup {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5px;
+    -fx-font-family: 'Arial';
+    -fx-font-size: 14px;
+    -fx-text-fill: #0c06a8;
+}
+
+/* Styling for the list items within the dropdown */
+.combo-box .list-cell {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-padding: 5px;
+    -fx-font-family: 'Arial';
+    -fx-font-size: 14px;
+    -fx-text-fill: #0c06a8; /* Same color as labels */
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: #f0f0f0;
+}
+
+/* Styling for the ComboBox arrow button */
+.combo-box .arrow-button {
+    -fx-background-color: #0c2bca; /* Same color as buttons */
+    -fx-background-radius: 5px;
+}
+
+.combo-box .arrow-button:hover {
+    -fx-background-color: #8abffd; /* Lighter blue for hover state */
+}
+
+.combo-box .text-field {
+    -fx-background-color: transparent; /* Inherits background color */
+    -fx-border: none;
+    -fx-padding: 0 5px;
+}
+
+
+/* Add additional styles as needed */

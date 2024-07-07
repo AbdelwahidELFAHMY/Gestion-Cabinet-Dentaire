@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="560.0" prefWidth="992.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cabinet.MedicalRecordsController">
+   <children>
+      <VBox prefHeight="560.0" prefWidth="992.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox spacing="10.0">
+               <children>
+                  <Label text="Liste des Patients" />
+                  <ListView fx:id="patientsListView" prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox spacing="10.0">
+               <children>
+                  <Label text="Documents du Patient" />
+                  <ListView fx:id="documentsListView" prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox spacing="10.0">
+               <children>
+                  <Button fx:id="openButton" onAction="#openMedicalRecord" text="Ouvrir Dossier" />
+                  <Button fx:id="addButton" onAction="#addDocument" text="Ajouter Document" />
+                  <Button fx:id="editButton" onAction="#editMedicalRecord" text="Modifier Dossier" />
+                  <Button fx:id="deleteButton" onAction="#deleteMedicalRecord" text="Supprimer Dossier" />
+                  <Button fx:id="downloadButton" onAction="#downloadDocument" text="Télécharger Document" />
+               </children>
+            </HBox>
+            <TextArea fx:id="medicalRecordTextArea" prefHeight="200.0" prefWidth="200.0" wrapText="true" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cabinet.Dentiste_Controle">
+   <content>
+      <AnchorPane id="AnchorPane" nodeOrientation="LEFT_TO_RIGHT" prefHeight="823.0" prefWidth="1528.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutY="-0.8" prefHeight="823.0" prefWidth="362.0" style="-fx-border-radius: 10px; -fx-border-color: black; -fx-background-color: #EBE8F9;" AnchorPane.bottomAnchor="-1.0" AnchorPane.topAnchor="-1.0">
+               <children>
+                  <VBox layoutX="10.0" layoutY="184.0" prefHeight="73.0" prefWidth="346.0" />
+                  <ImageView fitHeight="162.0" fitWidth="162.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/dotor.png" />
+                     </image>
+                  </ImageView>
+                  <VBox />
+                  <Button fx:id="ordonnance" alignment="BASELINE_LEFT" graphicTextGap="40.0" layoutX="10.0" layoutY="527.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="361.0" style="-fx-background-color: #EBE8F9;" text="Ordonnance">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/appointment-4.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="68.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="consultation" alignment="BASELINE_LEFT" graphicTextGap="40.0" layoutX="10.0" layoutY="416.0" mnemonicParsing="false" onAction="#consultation" prefHeight="56.0" prefWidth="361.0" style="-fx-background-color: #EBE8F9;" text="Consultation">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/appointment-4.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="68.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="deconnecter" alignment="BASELINE_LEFT" graphicTextGap="40.0" layoutX="10.0" layoutY="448.0" mnemonicParsing="false" onAction="#deconnecter" prefHeight="56.0" prefWidth="361.0" style="-fx-background-color: #EBE8F9;" text="Se déconnecter">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/logout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="67.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </VBox>
+            <AnchorPane layoutX="363.0" layoutY="80.0" prefHeight="262.0" prefWidth="1159.0" style="-fx-background-color: C9CDD1FF; -fx-border-color: black; -fx-border-radius: 10px;">
+               <children>
+                  <TextField fx:id="consultation_traitemrnt" layoutX="895.0" layoutY="77.0" prefHeight="26.0" prefWidth="253.0" promptText="traitementConvenable" stylesheets="@styleDentiste.css" />
+                  <TextField fx:id="consultation_idpatient" layoutX="624.0" layoutY="90.0" prefHeight="30.0" prefWidth="169.0" promptText="Id_patient" stylesheets="@styleDentiste.css" />
+                  <DatePicker fx:id="consultation_date" layoutX="624.0" layoutY="49.0" promptText="date" stylesheets="@styleDentiste.css" />
+                  <TextField fx:id="consultation_description" alignment="CENTER" layoutX="891.0" layoutY="121.0" prefHeight="152.0" prefWidth="236.0" promptText="description" />
+                  <TextField fx:id="consultation_nompatient" layoutX="624.0" layoutY="173.0" prefHeight="26.0" prefWidth="174.0" promptText="nom de patient" stylesheets="@styleDentiste.css" />
+                  <TextField fx:id="consultation_idRV" layoutX="624.0" layoutY="210.0" prefHeight="26.0" prefWidth="174.0" promptText="id_rendez vous" stylesheets="@styleDentiste.css" />
+                  <TableView fx:id="table_patient" layoutX="35.0" layoutY="73.0" prefHeight="128.0" prefWidth="414.0" style="-fx-border-color: black; -fx-border-radius: 5px;">
+                    <columns>
+                      <TableColumn fx:id="table_id_Patient" prefWidth="55.20001220703125" text="id_P" />
+                      <TableColumn fx:id="table_nom" prefWidth="79.99993896484375" text="nom" />
+                        <TableColumn fx:id="table_prenom" prefWidth="86.39996337890625" text="prenom" />
+                        <TableColumn fx:id="table_CIN" prefWidth="97.5999755859375" text="CIN" />
+                        <TableColumn fx:id="table_numeroSecuriteSociale" prefWidth="85.60003662109375" text="NSocial" />
+                    </columns>
+                  </TableView>
+                  <TextField fx:id="cherche_patient" layoutX="84.0" layoutY="19.0" prefHeight="40.0" prefWidth="278.0" promptText="chercher le patient par son CIN" />
+                  <Button fx:id="buttonCherche" layoutX="373.0" layoutY="21.0" mnemonicParsing="false" onAction="#ChercheButton" prefHeight="27.0" prefWidth="88.0" stylesheets="@styleDentiste.css" text="Cherche" />
+                  <ImageView fitHeight="38.0" fitWidth="52.0" layoutX="35.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../ressources/icons8_Search_52px.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="506.0" layoutY="48.0" prefHeight="26.0" prefWidth="118.0" stylesheets="@styleDentiste.css" text="dateConsultation :" />
+                  <Label layoutX="506.0" layoutY="135.0" prefHeight="26.0" prefWidth="120.0" text="prenomPatient :">
+                     <stylesheets>
+                        <URL value="@styleDentiste.css" />
+                        <URL value="@styleDentiste.css" />
+                     </stylesheets></Label>
+                  <Label layoutX="506.0" layoutY="174.0" prefHeight="26.0" prefWidth="119.0" text="nomPatient :">
+                     <stylesheets>
+                        <URL value="@styleDentiste.css" />
+                        <URL value="@styleDentiste.css" />
+                     </stylesheets></Label>
+                  <Label layoutX="506.0" layoutY="211.0" prefHeight="26.0" prefWidth="116.0" text="id_rendez_vous">
+                     <stylesheets>
+                        <URL value="@styleDentiste.css" />
+                        <URL value="@styleDentiste.css" />
+                     </stylesheets></Label>
+                  <Label layoutX="895.0" layoutY="48.0" prefHeight="26.0" prefWidth="142.0" stylesheets="@styleDentiste.css" text="Traitement Convenable :" />
+                  <Label layoutX="510.0" layoutY="91.0" prefHeight="26.0" prefWidth="112.0" text="id_patient         :">
+                     <stylesheets>
+                        <URL value="@styleDentiste.css" />
+                        <URL value="@styleDentiste.css" />
+                     </stylesheets></Label>
+                  <Button fx:id="consultation_enregistrer" layoutX="889.0" layoutY="283.0" mnemonicParsing="false" onAction="#setConsultation" prefHeight="36.0" prefWidth="110.0" stylesheets="@styleDentiste.css" text="Enregistrer" />
+                  <TextField fx:id="consultation_prenompatient" layoutX="624.0" layoutY="134.0" prefHeight="26.0" prefWidth="201.0" promptText="prenom de patient" stylesheets="@styleDentiste.css" />
+                  <Label layoutX="506.0" layoutY="247.0" prefHeight="26.0" prefWidth="118.0" text="id_maladie">
+                     <stylesheets>
+                        <URL value="@styleDentiste.css" />
+                        <URL value="@styleDentiste.css" />
+                     </stylesheets></Label>
+                  <TextField fx:id="consultation_idmaladie" layoutX="624.0" layoutY="246.0" prefHeight="26.0" prefWidth="174.0" promptText="id_maladie" stylesheets="@styleDentiste.css" />
+                  <Button fx:id="consultation_reset" layoutX="1021.0" layoutY="283.0" mnemonicParsing="false" onAction="#resetForm" prefHeight="36.0" prefWidth="100.0" stylesheets="@styleDentiste.css" text="Reset" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="364.0" layoutY="409.0" prefHeight="410.0" prefWidth="1165.0" style="-fx-background-color: C9CDD1FF; -fx-border-color: black; -fx-border-radius: 10px;">
+               <children>
+                  <TableView fx:id="table_consultation" layoutY="56.0" prefHeight="230.0" prefWidth="879.0" style="-fx-border-color: black; -fx-border-radius: 5px;" stylesheets="@styleDentiste.css">
+                    <columns>
+                      <TableColumn fx:id="table_idconsultation" prefWidth="115.19998168945312" text="id_consultation" />
+                        <TableColumn fx:id="table_nomPatient" prefWidth="116.00003051757812" text="nomPatient" />
+                        <TableColumn fx:id="table_prenomPatient" prefWidth="104.0" text="prenomPatient" />
+                      <TableColumn fx:id="table_dateconsultation" prefWidth="156.79998779296875" text="date_consultation" />
+                        <TableColumn fx:id="table_traitement" prefWidth="91.199951171875" text="traitement" />
+                        <TableColumn fx:id="table__idmaladie" prefWidth="90.39990234375" text="id_maladie" />
+                        <TableColumn fx:id="table_idpatient" prefWidth="78.4000244140625" text="id_patient" />
+                        <TableColumn fx:id="table_idRDV" prefWidth="131.2000732421875" text="id_rendez-vous" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="afficherConsultation" layoutX="28.0" layoutY="297.0" mnemonicParsing="false" onAction="#loadDataFromDatabase" prefHeight="26.0" prefWidth="104.0" stylesheets="@styleDentiste.css" text="afficher" />
+                  <Button fx:id="consultation_suprimer" layoutX="173.0" layoutY="297.0" mnemonicParsing="false" onAction="#DeleteConsultation" stylesheets="@styleDentiste.css" text="suprimer" />
+                  <Button fx:id="consultation_telecharger" layoutX="313.0" layoutY="297.0" mnemonicParsing="false" onAction="#DownloadConsultation" stylesheets="@styleDentiste.css" text="telecharger" />
+                  <TextField fx:id="cherche_consultation" layoutX="326.0" layoutY="14.0" prefHeight="34.0" prefWidth="286.0" promptText="chercher un Consultation" style="-fx-alignment: center; -fx-border-radius: 10px; -fx-border-color: black;" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

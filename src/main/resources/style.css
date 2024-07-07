@@ -1,0 +1,31 @@
+.root {
+    -fx-background-color: #f0f0f0; /* Couleur de fond */
+}
+
+.label {
+    -fx-font-size: 18px; /* Taille de police */
+    -fx-font-family: "Cambria Math"; /* Police de caractères */
+}
+
+.text-field, .password-field, .combo-box {
+    -fx-font-size: 13px; /* Taille de police */
+    -fx-font-family: "System Bold Italic"; /* Police de caractères */
+    -fx-prompt-text-fill: #808080; /* Couleur du texte de l'invite */
+}
+
+.check-box {
+    -fx-font-size: 13px; /* Taille de police */
+    -fx-text-fill: #000000; /* Couleur du texte */
+}
+
+.button {
+    -fx-font-size: 15px; /* Taille de police */
+    -fx-font-family: "System Bold Italic"; /* Police de caractères */
+    -fx-background-color: #007bff; /* Couleur de fond */
+    -fx-text-fill: #ffffff; /* Couleur du texte */
+}
+
+.hyperlink {
+    -fx-font-size: 15px; /* Taille de police */
+    -fx-text-fill: #007bff; /* Couleur du texte */
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="441.0" stylesheets="@style1.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cabinet.Controle_Login">
+    <children>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="AnchorPane" stylesheets="@style1.css">
+            <children>
+                <AnchorPane fx:id="login_form" prefHeight="551.0" prefWidth="441.0" styleClass="AnchorPane" stylesheets="@style1.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <Label fx:id="titre" layoutX="166.0" layoutY="14.0" prefHeight="31.0" prefWidth="171.0" stylesheets="@style1.css" text="Page Login" textAlignment="JUSTIFY">
+                            <font>
+                                <Font name="Cambria Math" size="18.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="login_username" alignment="TOP_CENTER" layoutX="99.0" layoutY="188.0" prefHeight="43.0" prefWidth="243.0" promptText="user name" stylesheets="@style1.css">
+                            <font>
+                                <Font name="System Bold Italic" size="13.0" />
+                            </font>
+                        </TextField>
+                        <PasswordField fx:id="login_password" alignment="TOP_CENTER" layoutX="99.0" layoutY="240.0" prefHeight="43.0" prefWidth="243.0" promptText="password" stylesheets="@style1.css">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </PasswordField>
+                        <TextField fx:id="login_showPassword" alignment="TOP_CENTER" cacheShape="false" layoutX="99.0" layoutY="240.0" prefHeight="43.0" prefWidth="243.0" promptText="Password" stylesheets="@style1.css" visible="false">
+                            <font>
+                                <Font name="System Bold Italic" size="13.0" />
+                            </font>
+                        </TextField>
+                        <CheckBox fx:id="login_checkBox" layoutX="100.0" layoutY="297.0" mnemonicParsing="false" onAction="#show_password" prefHeight="38.0" prefWidth="155.0" stylesheets="@style1.css" text="show password " />
+                        <Button fx:id="login_loginbrtn" layoutX="96.0" layoutY="358.0" mnemonicParsing="false" onAction="#login" prefHeight="43.0" prefWidth="250.0" stylesheets="@style1.css" text="Login" />
+      
+      
+                        <ComboBox fx:id="login_comboBox" layoutX="96.0" layoutY="425.0" prefHeight="29.0" prefWidth="250.0" promptText="select user" stylesheets="@style1.css">
+                            <items>
+                                <FXCollections fx:factory="observableArrayList">
+                                    <String fx:value="Secretaire" />
+                                    <String fx:value="Dentiste" />
+                                </FXCollections>
+                            </items>
+                        </ComboBox>
+                  <AnchorPane layoutX="159.0" layoutY="54.0" prefHeight="124.0" prefWidth="124.0" styleClass="UserIcon" stylesheets="@style1.css" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

@@ -1,0 +1,59 @@
+/* Style pour le fond de l'interface */
+#AnchorPane {
+    -fx-background-color: #FFFFFF;
+}
+
+/* Style pour le logo */
+#logoImageView {
+    -fx-fit-height: 162;
+    -fx-fit-width: 162;
+    -fx-padding: 20;
+}
+
+/* Style pour les boutons */
+.button {
+    -fx-background-color: linear-gradient(to bottom, #0c2bca, #8abffd);
+    -fx-text-fill: white; /* Couleur du texte */
+    -fx-font-size: 14px; /* Taille de la police */
+    -fx-padding: 8px 16px; /* Rembourrage du bouton */
+    -fx-background-radius: 5px; /* Bordure arrondie */
+}
+
+/* Style pour les champs de texte */
+.text-field {
+    -fx-pref-height: 26;
+    -fx-pref-width: 200;
+    -fx-font-size: 14px;
+}
+
+/* Style pour les étiquettes */
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #000000;
+}
+
+/* Style pour les TableView */
+.table-view {
+    -fx-pref-height: 230;
+    -fx-pref-width: 886;
+}
+
+/* Style pour les cellules de TableView */
+.table-cell {
+    -fx-alignment: CENTER;
+}
+
+/* Style pour les boutons d'action */
+.action-button {
+    -fx-background-color: #c9cdd1;
+    -fx-font-size: 5px;
+    -fx-text-fill: #000000;
+    -fx-padding: 2 5;
+}
+
+/* Style pour les images des boutons */
+.button .icon-image {
+    -fx-fit-height: 20;
+    -fx-fit-width: 20;
+    -fx-padding: 0 5;
+}

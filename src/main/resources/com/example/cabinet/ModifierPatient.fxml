@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="417.0" prefWidth="528.0" stylesheets="@ModifierPatientCSS.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cabinet.ModifierPatientController">
+    <children>
+        <Label layoutX="191.0" layoutY="14.0" prefHeight="32.0" prefWidth="109.0" text="Modifier Patient">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="62.0" layoutY="89.0" prefHeight="17.0" prefWidth="134.0" styleClass="label" text="Nom:" />
+        <TextField fx:id="nomField" layoutX="264.0" layoutY="84.0" styleClass="text-field" />
+        <Label layoutX="62.0" layoutY="134.0" prefHeight="17.0" prefWidth="134.0" styleClass="label" text="Prénom:" />
+        <TextField fx:id="prenomField" layoutX="264.0" layoutY="129.0" styleClass="text-field" />
+        <Label layoutX="62.0" layoutY="322.0" prefHeight="20.0" prefWidth="173.0" styleClass="label" text="numeroSecuriteSociale:" />
+        <TextField fx:id="numeroSecuriteSociale" layoutX="264.0" layoutY="316.0" prefHeight="25.0" prefWidth="149.0" styleClass="text-field" />
+        <Label layoutX="62.0" layoutY="228.0" prefHeight="17.0" prefWidth="134.0" styleClass="label" text="Téléphone:" />
+        <TextField fx:id="telephoneField" layoutX="264.0" layoutY="223.0" styleClass="text-field" />
+        <Label layoutX="62.0" layoutY="275.0" prefHeight="17.0" prefWidth="134.0" styleClass="label" text="Adresse:" />
+        <TextField fx:id="adresseField" layoutX="264.0" layoutY="270.0" styleClass="text-field" />
+        <Label layoutX="62.0" layoutY="179.0" prefHeight="17.0" prefWidth="134.0" styleClass="label" text="CIN: " />
+        <TextField fx:id="CIN" layoutX="264.0" layoutY="173.0" styleClass="text-field" />
+        <Button fx:id="modifierButton" layoutX="80.0" layoutY="369.0" mnemonicParsing="false" onAction="#modifierPatient" prefHeight="25.0" prefWidth="357.0" styleClass="button" text="Modifier" />
+    </children>
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+</AnchorPane>

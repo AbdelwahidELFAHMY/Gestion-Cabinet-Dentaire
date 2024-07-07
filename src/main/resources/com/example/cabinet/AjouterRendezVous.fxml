@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="570.0" stylesheets="@ModifierPatientCSS.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cabinet.AjouterRendezVousController">
+    <children>
+        <AnchorPane layoutX="65.0" layoutY="18.0" prefHeight="471.0" prefWidth="570.0" stylesheets="@ModifierPatientCSS.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label layoutX="190.0" layoutY="25.0" prefHeight="36.0" prefWidth="188.0" text="Planifier le Rendez-Vous">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </Label>
+                <Label layoutX="73.0" layoutY="145.0" prefHeight="36.0" prefWidth="127.0" text="CIN Patient:">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </Label>
+                <Label layoutX="73.0" layoutY="206.0" prefHeight="36.0" prefWidth="127.0" text="Nom Dentiste:">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </Label>
+                <Label layoutX="73.0" layoutY="265.0" prefHeight="36.0" prefWidth="220.0" text="Date Rendez-Vous:">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </Label>
+                <Label layoutX="73.0" layoutY="319.0" prefHeight="36.0" prefWidth="127.0" text="Heure:">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="CINpatientField" layoutX="297.0" layoutY="147.0" prefHeight="25.0" prefWidth="187.0" />
+                <TextField fx:id="nomdentistField" layoutX="299.0" layoutY="208.0" prefHeight="25.0" prefWidth="187.0" />
+                <TextField fx:id="heureField" layoutX="297.0" layoutY="321.0" prefHeight="25.0" prefWidth="187.0" promptText="HH:mm:ss" />
+                <DatePicker fx:id="dateField" layoutX="297.0" layoutY="267.0" prefHeight="32.0" prefWidth="200.0" />
+                <Button layoutX="104.0" layoutY="384.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="422.0" text="Ajouter" AnchorPane.leftAnchor="104.0" AnchorPane.topAnchor="384.0" />
+            <Line endX="204.0" layoutX="276.0" layoutY="61.0" startX="-205.0" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
