@@ -26,8 +26,8 @@ Ajouter ou Modifier Ordonance ou Consultation
 
 <h4>Connexion sécurisée avec différents niveaux d'accès :</h4>
 
-<strong>Secrétaire :</strong> Identifiant root, Mot de passe root
-<strong>Dentiste :</strong> Identifiant admin, Mot de passe admin (pour tester)
+<strong>Secrétaire :</strong> Identifiant "root", Mot de passe "root"<br>
+<strong>Dentiste :</strong> Identifiant "admin", Mot de passe "admin" (pour tester)
 
 <h4>Technologies Utilisées:</h4>
 <strong>JavaFX : </strong>Utilisé pour la création de l'interface utilisateur et la gestion des événements<br>
