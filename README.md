@@ -1,35 +1,40 @@
 <h1>Gestion de Cabinet Dentaire avec JavaFX</h1>
-Ce projet est une application de gestion de cabinet dentaire développée en JavaFX et Scene Builder. L'application permet la gestion des patients, des rendez-vous et des dossiers médicaux dans un cabinet dentaire.
+<span>Ce projet est une application de gestion de cabinet dentaire développée en JavaFX et Scene Builder. L'application permet la gestion des patients, des rendez-vous et des dossiers médicaux dans un cabinet dentaire.</span>
 
-Fonctionnalités Principales
-Gestion des Patients :
+<h2>Fonctionnalités Principales</h2>
+<h3></h3>Gestion des Patients :</h3>
 
 Ajouter, modifier et supprimer des informations sur les patients.
 Afficher la liste des patients avec des détails comme le nom, l'âge et les coordonnées.
-Gestion des Rendez-vous :
+
+<h3>Gestion des Rendez-vous :</h3>
 
 Planifier et modifier des rendez-vous pour les patients.
 Afficher un calendrier des rendez-vous et les détails associés.
-Gestion des Dossiers Médicaux :
+
+<h3>Gestion des Dossiers Médicaux :</h3>
 
 Consulter et mettre à jour les dossiers médicaux des patients.
 Ajouter des informations médicales telles que les traitements et les prescriptions.
 
-Gestion des consultations et Ordonances:
+<h3>Gestion des consultations et Ordonances:</h3>
+
 Afficher et rechercher les consultation et les ordonances.
 Ajouter ou Modifier Ordonance ou Consultation.
 
-Authentification :
+<h3>Authentification :</h3>
 
-Connexion sécurisée avec différents niveaux d'accès :
-Secrétaire : Identifiant root, Mot de passe root
-Dentiste : Identifiant admin, Mot de passe admin (pour tester)
-Technologies Utilisées
-JavaFX : Utilisé pour la création de l'interface utilisateur et la gestion des événements.
-Scene Builder : Outil de conception visuelle pour construire les interfaces utilisateur JavaFX.
-CSS : Utilisé pour styliser l'interface utilisateur et améliorer l'expérience utilisateur.
+<h5>Connexion sécurisée avec différents niveaux d'accès :</h5>
 
-Prérequis
+<strong>Secrétaire :</strong> Identifiant root, Mot de passe root
+<strong>Dentiste :</strong>strong> Identifiant admin, Mot de passe admin (pour tester)
+
+<h5>Technologies Utilisées:</h5>
+<strong>JavaFX : </strong>strong>Utilisé pour la création de l'interface utilisateur et la gestion des événements.
+<strong>Scene Builder :</strong>strong> Outil de conception visuelle pour construire les interfaces utilisateur JavaFX.
+<strong>CSS : </strong>strong>Utilisé pour styliser l'interface utilisateur et améliorer l'expérience utilisateur.
+
+<h5Prérequis:</h5>
 Pour exécuter cette application localement, assurez-vous d'avoir installé les outils suivants :
 
 Java Development Kit (JDK) 8 ou supérieur
