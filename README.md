@@ -40,3 +40,5 @@ Pour exécuter cette application localement, assurez-vous d'avoir installé les 
 Java Development Kit (JDK) 8 ou supérieur
 JavaFX SDK
 Scene Builder
+
+<h3 color= "Red">NB: le ficher de la base de données cabinet_dentaire.sql</h3>
