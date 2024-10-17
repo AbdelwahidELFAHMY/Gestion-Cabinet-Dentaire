@@ -41,4 +41,7 @@ Java Development Kit (JDK) 8 ou supérieur
 JavaFX SDK
 Scene Builder
 
+## Schéma de la Base de Données
+![Relational Schema](./SchemaR.png)
+
 <h4>NB: le ficher de la base de données:cabinet_dentaire.sql</h4>
